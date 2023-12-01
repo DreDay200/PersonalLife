@@ -1,0 +1,92 @@
+body {
+  background-color: #0f0f0f;
+  padding: 25px;
+  color: white;
+  font-size: 25px;
+}
+
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border-style: double;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px gray;
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  opacity: 0.5;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+div {
+  text-indent: 50px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.parent {
+  width: 1400px;
+  height: 50px;
+  background: white;
+}
+
+.child {
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  transition: transform 1s linear;
+}
+
+.parent:hover .child {
+  transform: translate(1400%);
+  background-color: whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: auto;
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.flex-container > div {
+  background-color: gray;
+  padding: 30px;
+  margin: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 5px whitesmoke;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
+
+@keyframes mything {
+  from {
+    left: 0px;
+  }
+  to {
+    right: 200px;
+  }
+}
+
+.footer {
+  display: grid;
+  background-color: gray;
+}
